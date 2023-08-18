@@ -24,9 +24,37 @@
     <header class="header">
       <div class="header__container">
         <a class="header__logo" href="/">
-          <img src="./assets/logo.png" alt="logo" />
-          <img src="./assets/hydra.png" alt="name" />
+          <img class="logo__img" src="./assets/logo.svg" alt="logo" />
+          <img class="logo__text" src="./assets/hydra.svg" alt="name" />
         </a>
+
+        <!-- Desktop Menu -->
+
+        <nav class="header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">ABOUT</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">SERVICES</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">TECHNOLOGIES</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">HOW TO</a></li>
+          </ul>
+        </nav>
+
+        <ul class="buttons__list">
+          <li>
+            <button class="header__button bordered" type="button">
+              CONTACT US
+            </button>
+          </li>
+          <li>
+            <button class="header__button" type="button">JOIN HYDRA</button>
+          </li>
+        </ul>
+
+        <!-- Mobile Menu -->
         <button class="header__button-mobile" type="button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -97,93 +125,315 @@
     </header>
     <main class="main">
       <!-- Hero -->
-      <section class="hero section">
+      <section class="hero">
         <div class="hero__container">
           <div class="hero__wrapper">
-            <img
-              class="hero__image"
-              src="./assets/hero-image.jpg"
-              alt="vr glasses"
-              width="318"
-              height="277"
-            />
-          </div>
-          <h1 class="hero__title">
-            <span class="hero__title-accent">Dive</span> Into The Depths Of
-            <span class="hero__title-accent">Virtual Reality</span>
-          </h1>
-          <button class="button" type="button">BUILD YOUR WORLD</button>
-
-          <a
-            class="hero__link"
-            href="https://www.google.com.ua/maps/place/Union+St,+Seattle,+WA+98101,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@47.6099175,-122.3366916,17z/data=!3m1!4b1!4m6!3m5!1s0x54906ab465f9a32d:0x2b0d2afe1e719e15!8m2!3d47.6099139!4d-122.3341167!16s%2Fg%2F1vcq795y?entry=ttu"
-            target="_blank"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="70"
-              height="70"
-              viewBox="0 0 70 70"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M35 5.83333C46.2759 5.83333 55.4167 14.9742 55.4167 26.25C55.4167 29.6593 54.5834 32.8717 53.104 35.6983L35 67.0833L17.3154 36.4595C15.575 33.4542 14.5834 29.9692 14.5834 26.25C14.5834 14.9742 23.7242 5.83333 35 5.83333ZM35 11.6667C26.9459 11.6667 20.4167 18.1958 20.4167 26.25C20.4167 28.566 20.951 30.7882 21.962 32.7943L22.452 33.6893L35 55.4167L47.6367 33.5362C48.9072 31.3423 49.5834 28.8555 49.5834 26.25C49.5834 18.1958 43.0542 11.6667 35 11.6667ZM35 17.5C39.8325 17.5 43.75 21.4175 43.75 26.25C43.75 31.0825 39.8325 35 35 35C30.1675 35 26.25 31.0825 26.25 26.25C26.25 21.4175 30.1675 17.5 35 17.5ZM35 23.3333C33.3892 23.3333 32.0834 24.6392 32.0834 26.25C32.0834 27.8608 33.3892 29.1667 35 29.1667C36.6109 29.1667 37.9167 27.8608 37.9167 26.25C37.9167 24.6392 36.6109 23.3333 35 23.3333Z"
-                fill="#C0B7E8"
+            <div class="hero__wrapper--image">
+              <img
+                class="hero__image"
+                src="./assets/hero-img.jpg"
+                alt="vr glasses"
+                width="318"
+                height="277"
               />
-            </svg>
-            <span class="hero__link-text"
-              >Union St, Seattle, WA 98101, United States</span
-            ></a
-          >
+            </div>
+            <div class="hero__wrapper--info">
+              <h1 class="hero__title">
+                <span class="hero__title-accent">Dive</span> Into The Depths Of
+                <span class="hero__title-accent">Virtual Reality</span>
+              </h1>
+              <p class="hero__info">
+                Virtual reality is a simulated 3D environment that enables users
+                to explore and interact with a virtual surrounding in a way that
+                approximates reality, as it is perceived through the users'
+                senses.
+              </p>
+              <button class="button" type="button">BUILD YOUR WORLD</button>
+            </div>
+          </div>
+
+          <ul class="hero-links__list">
+            <li class="hero-links__item">
+              <img
+                src="./assets/location-icon.svg"
+                alt="location icon"
+                width="70"
+                height="70"
+              />
+              <div>
+                <a
+                  class="hero-links__link"
+                  href="https://www.google.com.ua/maps/place/Union+St,+Seattle,+WA+98101,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@47.6099175,-122.3366916,17z/data=!3m1!4b1!4m6!3m5!1s0x54906ab465f9a32d:0x2b0d2afe1e719e15!8m2!3d47.6099139!4d-122.3341167!16s%2Fg%2F1vcq795y?entry=ttu"
+                  target="_blank"
+                >
+                  Pay Us a Visit</a
+                >
+                <p class="hero-lins__info">
+                  Union St, Seattle, WA 98101, United States
+                </p>
+              </div>
+            </li>
+            <li class="hero-links__item">
+              <img
+                src="./assets/phone-icon.svg"
+                alt="phone icon"
+                width="70"
+                height="70"
+              />
+              <div>
+                <a class="hero-links__link" href="tel:+496170961709">
+                  Give Us a Call
+                </a>
+                <p class="hero-lins__info">(110) 1111-1010</p>
+              </div>
+            </li>
+            <li class="hero-links__item">
+              <img
+                src="./assets/mail-icon.svg"
+                alt="mail icon"
+                width="70"
+                height="70"
+              />
+              <div>
+                <a
+                  href="mailto:Contact@HydraVTech.com"
+                  class="hero-links__link"
+                >
+                  Send Us a Message</a
+                >
+                <p class="hero-lins__info">Contact@HydraVTech.com</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Intro -->
       <section class="intro section">
         <div class="intro__container">
-          <h2 class="section__title">INTRODUCTION</h2>
-          <h3 class="section__subtitle">TO HYDRA VR</h3>
+          <div class="section__wrapper">
+            <div>
+              <h2 class="section__title">INTRODUCTION</h2>
+              <h3 class="section__subtitle">TO HYDRA VR</h3>
+            </div>
 
-          <img
-            class="intro__img"
-            src="./assets/intro-image.jpg"
-            alt="man with vr"
-            width="336"
-            height="358"
-          />
+            <div class="section__box">
+              <p class="section__paragraph">
+                Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                lectus. Mi sit amet mauris commodo quis imperdiet massa
+                tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                lectus sit amet est placerat in. Lectus magna fringilla urna
+                porttitor rhoncus vitae.
+              </p>
+            </div>
+          </div>
 
-          <p class="intro__info">
-            Virtual reality (VR) means experiencing things through our computers
-            that don't really exist. From that simple definition, the idea
-            doesn't sound especially new. When you look at an amazing Canaletto
-            painting, for example, you're experiencing the sites and sounds of
-            Italy as it was about 250 years ago—so that's a kind of virtual
-            reality. In the same way, if you listen to ambient instrumental or
-            classical music with your eyes closed, and start dreaming about
-            things, isn't that an example of virtual reality—an experience of a
-            world that doesn't really exist?
-          </p>
+          <div class="intro__wrapper">
+            <img
+              class="intro__img"
+              src="./assets/intro-image.jpg"
+              alt="man with vr"
+              width="336"
+              height="358"
+            />
 
-          <button class="button" type="button">LET’S GET IN TOUCH</button>
+            <div class="intro__box">
+              <div class="section__title--desktop">
+                <h2 class="section__title">ABOUT</h2>
+                <h3 class="section__subtitle">HYDRA VR</h3>
+              </div>
+
+              <p class="intro__info">
+                Virtual reality (VR) means experiencing things through our
+                computers that don't really exist. From that simple definition,
+                the idea doesn't sound especially new. When you look at an
+                amazing Canaletto painting, for example, you're experiencing the
+                sites and sounds of Italy as it was about 250 years ago—so
+                that's a kind of virtual reality. In the same way, if you listen
+                to ambient instrumental or classical music with your eyes
+                closed, and start dreaming about things, isn't that an example
+                of virtual reality—an experience of a world that doesn't really
+                exist?
+              </p>
+
+              <button class="button" type="button">LET’S GET IN TOUCH</button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Advantages -->
       <section class="advantages section">
         <div class="advantages__container">
-          <h2 class="section__title">WHY BUILD</h2>
-          <h3 class="section__subtitle">WITH HYDRA?</h3>
+          <div class="section__wrapper">
+            <div>
+              <h2 class="section__title">WHY BUILD</h2>
+              <h3 class="section__subtitle">WITH HYDRA?</h3>
+            </div>
+
+            <div class="section__box">
+              <p class="section__paragraph">
+                Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                lectus. Mi sit amet mauris commodo quis imperdiet massa
+                tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                lectus sit amet est placerat in. Lectus magna fringilla urna
+                porttitor rhoncus vitae.
+              </p>
+            </div>
+          </div>
+
+          <ul class="advantages__list">
+            <li class="advantages__card">
+              <div class="card__border">
+                <img
+                  class="card__img"
+                  src="./assets/simulation.jpg"
+                  alt="vr glasses usage"
+                  width="190"
+                  height="190"
+                />
+              </div>
+
+              <h4 class="card__title">SIMULATION</h4>
+              <p class="card__text">
+                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                porttitor rhoncus libero justo laoreet sit amet vitae.
+              </p>
+              <button class="button card__button">TRY IT NOW</button>
+            </li>
+            <li class="advantages__card">
+              <div class="card__border">
+                <img
+                  class="card__img"
+                  src="./assets/education.jpg"
+                  alt="vr glasses usage"
+                  width="190"
+                  height="190"
+                />
+              </div>
+              <h4 class="card__title">EDUCATION</h4>
+              <p class="card__text">
+                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                porttitor rhoncus libero justo laoreet sit amet vitae.
+              </p>
+              <button class="button card__button">TRY IT NOW</button>
+            </li>
+            <li class="advantages__card">
+              <div class="card__border">
+                <img
+                  class="card__img"
+                  src="./assets/selfcare.jpg"
+                  alt="vr glasses usage"
+                  width="190"
+                  height="190"
+                />
+              </div>
+              <h4 class="card__title">SELF-CARE</h4>
+              <p class="card__text">
+                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                porttitor rhoncus libero justo laoreet sit amet vitae.
+              </p>
+              <button class="button card__button">TRY IT NOW</button>
+            </li>
+            <li class="advantages__card">
+              <div class="card__border">
+                <img
+                  class="card__img"
+                  src="./assets/outdoor.jpg"
+                  alt="vr glasses usage"
+                  width="190"
+                  height="190"
+                />
+              </div>
+              <h4 class="card__title">OUTDOOR</h4>
+              <p class="card__text">
+                Vitae sapien pellentesque habitant morbi nunc. Viverra aliquet
+                porttitor rhoncus libero justo laoreet sit amet vitae.
+              </p>
+              <button class="button card__button">TRY IT NOW</button>
+            </li>
+          </ul>
+
           <div class="advantages__banner">
             <h4 class="banner__title">TECHNOLOGIES & HARDWARE</h4>
             <h5 class="banner__subtitle">USED BY HYDRA VR.</h5>
           </div>
+
+          <ul class="advantages-partners__list">
+            <li>
+              <img
+                src="./assets/partners/unrealengine.png"
+                alt="partner logo"
+                width="174"
+                height="174"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/partners/unity.png"
+                alt="partner logo"
+                width="252"
+                height="252"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/partners/oculus.png"
+                alt="partner logo"
+                width="263"
+                height="263"
+              />
+            </li>
+            <li>
+              <img
+                src="./assets/partners/vive.png"
+                alt="partner logo"
+                width="282"
+                height="282"
+              />
+            </li>
+          </ul>
         </div>
       </section>
       <!-- About -->
       <section class="about section">
         <div class="about__container">
-          <h2 class="section__title">HOW WE BUILD</h2>
-          <h3 class="section__subtitle">WITH HYDRA VR?</h3>
+          <div class="section__wrapper">
+            <div>
+              <h2 class="section__title">HOW WE BUILD</h2>
+              <h3 class="section__subtitle">WITH HYDRA VR?</h3>
+            </div>
+
+            <div class="section__box">
+              <p class="section__paragraph">
+                Vitae sapien pellentesque habitant morbi tristique senectus et
+                netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+                lectus. Mi sit amet mauris commodo quis imperdiet massa
+                tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare
+                lectus sit amet est placerat in. Lectus magna fringilla urna
+                porttitor rhoncus vitae.
+              </p>
+            </div>
+          </div>
+
+          <ul class="about__list">
+            <li class="about__item">
+              <div class="about__circle"><p class="about__numer">01</p></div>
+              <h4 class="about__name">3D Conception & Design</h4>
+            </li>
+            <li class="about__item">
+              <div class="about__circle"><p class="about__numer">02</p></div>
+              <h4 class="about__name">Interaction Design</h4>
+            </li>
+            <li class="about__item">
+              <div class="about__circle"><p class="about__numer">03</p></div>
+              <h4 class="about__name">VR World User Testing</h4>
+            </li>
+            <li class="about__item">
+              <div class="about__circle"><p class="about__numer">04</p></div>
+              <h4 class="about__name">Hydra VR Deploy</h4>
+            </li>
+          </ul>
         </div>
       </section>
       <!-- Join -->
@@ -238,7 +488,60 @@
           </form>
         </div>
       </section>
+      <!-- Socials -->
+      <section class="socials">
+        <div class="socials__container">
+          <img src="./assets/logoL.svg" alt="logo" />
+          <h3 class="socials__title">SOCIALIZE WITH HYDRA</h3>
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><img src="./assets/facebook.svg" alt="facebook logo"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><img src="./assets/twitter.svg" alt="twitter logo"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><img src="./assets/linkedin.svg" alt="linkedinlogo"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><img src="./assets/youtube.svg" alt="youtube logo"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><img src="./assets/instagram.svg" alt="instagram logo"
+              /></a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#"
+                ><img src="./assets/pinterest.svg" alt="pinterest logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer section">
+      <div class="footer__container">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <p class="footer__info">2023 © HYDRA LANDING PAGE</p>
+          </li>
+          <li class="footer__item">
+            <p class="footer__info">BY ZINE. E. FALOUTI</p>
+          </li>
+          <li class="footer__item">
+            <p class="footer__info">ALL RIGHTS RESERVED</p>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
